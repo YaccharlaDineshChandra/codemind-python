@@ -1,7 +1,7 @@
 n=int(input())
+d=0
 sum=0
 product=1
-d=0
 while n>0:
     d=n%10
     sum=sum+d
