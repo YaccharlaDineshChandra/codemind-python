@@ -1,14 +1,13 @@
 n=int(input())
 l=list(map(int,input().split()))
 b=[]
+c=1
 for i in l:
-    a=[]
-    c=1
-    a.append(i)
-    for j in l:
-        if j not in a:
-            c*=j
+    t=set(l)
+    t.discard(i)
+    for j in t:
+        c*=j
     b.append(c)
-print(*b)            
-            
-            
+    c=1
+print(*b)    
+        
